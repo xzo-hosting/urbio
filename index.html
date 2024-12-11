@@ -21,8 +21,13 @@
         }
 
         /* Asegura que el icono de Discord tenga el tamaño correcto */
-        .item-wrap .discord-icon {
+        .discord-icon {
             font-size: 20px; /* Tamaño del icono de Discord ajustado a 20px */
+        }
+
+        /* Asegura que el icono de Example tenga el tamaño correcto */
+        .example-icon {
+            font-size: 20px; /* Tamaño del icono de Example ajustado a 20px */
         }
 
         /* Estilo del widget */
@@ -32,7 +37,6 @@
             align-items: center;
             justify-content: space-between;
         }
-
     </style>
 </head>
 <body>
@@ -51,7 +55,8 @@
         <a href="#" class="item">
             <div class="item-wrap">
                 <div>
-                    <i class="fas fa-cogs" style="color: #5dfba9;"></i> <!-- Icono de engranaje -->
+                    <!-- Icono de Example ajustado al mismo tamaño que Discord -->
+                    <i class="fas fa-cogs example-icon" style="color: #5dfba9;"></i>
                 </div>
                 Example
             </div>
