@@ -29,16 +29,23 @@
             margin-left: 10px;
         }
 
-        /* Estilos para el icono de Discord */
+        /* Estilos para los iconos */
         .discord-icon {
-            font-size: 20px;
             color: #7289da; /* Color de Discord */
         }
 
-        /* Estilos para el icono de Example */
+        .twitter-icon {
+            color: #1DA1F2; /* Color de Twitter */
+        }
+
         .example-icon {
-            font-size: 20px;
             color: #5dfba9; /* Color de Example */
+        }
+
+        /* Estilo para el texto "Get UrBio" y el icono de verificación */
+        .hero span {
+            font-size: 24px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -47,21 +54,23 @@
         <div class="img">
             <img src="urbio.jpg" alt="">
         </div>
-        <span>Get UrBio</span>
+        <span>
+            Get UrBio
+            <i class="fa-solid fa-badge-check" style="color: #3f9aea; font-size: 20px; vertical-align: middle;"></i> <!-- Icono de verificación -->
+        </span>
         <span>
             Get your bio right now!
-            <i class="i class="fa-solid fa-badge-check" style="color: #3f9aea;"></i> <!-- Icono de verificación -->
         </span>
     </div>
 
     <div class="links">
         <!-- Enlace de Twitter -->
-<a href="https://x.com/urbiolol" class="item">
-    <div class="item-wrap">
-        <i class="fa-brands fa-twitter" style="font-size: 20px; color: #1DA1F2;"></i> <!-- Icono de Twitter -->
-        <span>Our Twitter</span>
-    </div>
-</a>
+        <a href="https://x.com/urbiolol" class="item">
+            <div class="item-wrap">
+                <i class="fab fa-twitter twitter-icon"></i> <!-- Icono de Twitter -->
+                <span>Our Twitter</span>
+            </div>
+        </a>
 
         <!-- Enlace de Discord -->
         <a href="https://discord.gg/vKCM6q6Auz" class="item">
