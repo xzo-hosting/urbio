@@ -47,6 +47,35 @@
             font-size: 24px;
             font-weight: bold;
         }
+
+        /* Estilo del tooltip */
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltip-text {
+            visibility: hidden;
+            width: 160px;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Muestra el tooltip arriba */
+            left: 50%;
+            margin-left: -80px; /* Centrado */
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
     </style>
 </head>
 <body>
@@ -56,7 +85,11 @@
         </div>
         <span>
             Get UrBio
-            <i class="fa-solid fa-check-circle" style="color: #3f9aea; font-size: 20px; vertical-align: middle;"></i> <!-- Icono de verificación -->
+            <div class="tooltip">
+                <i class="fa-solid fa-check-circle" style="color: #3f9aea; font-size: 20px; vertical-align: middle;"></i>
+                <!-- Tooltip -->
+                <div class="tooltip-text">This account is verified</div>
+            </div>
         </span>
         <span>
             Get your bio right now!
