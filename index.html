@@ -7,20 +7,32 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* Asegura que los iconos sean del mismo tamaño */
-        .item-wrap i {
-            font-size: 32px; /* Ajusta el tamaño del icono */
-            vertical-align: middle; /* Alineación vertical */
-        }
-        
+        /* Asegura que el tamaño de los iconos sea el mismo */
         .item-wrap {
             display: flex;
             align-items: center; /* Alinea el icono con el texto */
+            font-size: 32px; /* Asegura el tamaño de los iconos */
+            padding: 10px;
         }
 
+        /* Espaciado entre el icono y el texto */
         .item-wrap span {
-            margin-left: 10px; /* Espacio entre el icono y el texto */
+            margin-left: 10px;
         }
+
+        /* Asegura que el icono de Discord tenga el tamaño correcto */
+        .item-wrap .discord-icon {
+            font-size: 32px; /* Tamaño del icono de Discord */
+        }
+
+        /* Estilo del widget */
+        .links a {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
     </style>
 </head>
 <body>
@@ -46,8 +58,8 @@
         </a>
         <a href="https://discord.gg/vKCM6q6Auz" class="item">
             <div class="item-wrap">
-                <!-- Icono de Discord ajustado al mismo tamaño -->
-                <i class="fab fa-discord" style="font-size: 32px; color: #7289da;"></i>
+                <!-- Icono de Discord asegurando el tamaño -->
+                <i class="fab fa-discord discord-icon" style="color: #7289da;"></i>
                 <span>Join Discord</span>
             </div>
         </a>
