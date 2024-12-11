@@ -7,35 +7,38 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* Asegura que el tamaño de los iconos sea el mismo */
-        .item-wrap {
-            display: flex;
-            align-items: center; /* Alinea el icono con el texto */
-            font-size: 20px; /* Tamaño del icono ajustado a 20px */
-            padding: 10px;
-        }
-
-        /* Espaciado entre el icono y el texto */
-        .item-wrap span {
-            margin-left: 10px;
-        }
-
-        /* Asegura que el icono de Discord tenga el tamaño correcto */
-        .discord-icon {
-            font-size: 20px; /* Tamaño del icono de Discord ajustado a 20px */
-        }
-
-        /* Asegura que el icono de Example tenga el tamaño correcto */
-        .example-icon {
-            font-size: 20px; /* Tamaño del icono de Example ajustado a 20px */
-        }
-
-        /* Estilo del widget */
+        /* Estilo para el enlace */
         .links a {
             text-decoration: none;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-start;
+            padding: 10px;
+            font-size: 20px; /* Aseguramos que ambos iconos tengan el mismo tamaño */
+        }
+
+        /* Aseguramos que el icono y el texto estén alineados */
+        .item-wrap {
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+        }
+
+        /* Alineamos el texto con un espacio de separación */
+        .item-wrap span {
+            margin-left: 10px;
+        }
+
+        /* Estilos para el icono de Discord */
+        .discord-icon {
+            font-size: 20px;
+            color: #7289da; /* Color de Discord */
+        }
+
+        /* Estilos para el icono de Example */
+        .example-icon {
+            font-size: 20px;
+            color: #5dfba9; /* Color de Example */
         }
     </style>
 </head>
@@ -52,19 +55,18 @@
     </div>
 
     <div class="links">
+        <!-- Enlace de Example -->
         <a href="#" class="item">
             <div class="item-wrap">
-                <div>
-                    <!-- Icono de Example ajustado al mismo tamaño que Discord -->
-                    <i class="fas fa-cogs example-icon" style="color: #5dfba9;"></i>
-                </div>
-                Example
+                <i class="fas fa-cogs example-icon"></i> <!-- Icono de Example -->
+                <span>Example</span>
             </div>
         </a>
+
+        <!-- Enlace de Discord -->
         <a href="https://discord.gg/vKCM6q6Auz" class="item">
             <div class="item-wrap">
-                <!-- Icono de Discord asegurando el tamaño -->
-                <i class="fab fa-discord discord-icon" style="color: #7289da;"></i>
+                <i class="fab fa-discord discord-icon"></i> <!-- Icono de Discord -->
                 <span>Join Discord</span>
             </div>
         </a>
